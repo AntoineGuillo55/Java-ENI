@@ -1,0 +1,36 @@
+package fr.eni.poodrills.modele;
+
+public class Rectangle extends Forme{
+
+	private float largeur;
+	private float longueur;
+	
+	public Rectangle(int largeur, int longueur) {
+		super();
+		this.largeur = largeur;
+		this.longueur = longueur;
+	}
+	
+	public float calculerSurface(float largeur, float longueur) {
+		return largeur*longueur;
+	}
+
+	public float getLargeur() {
+		return largeur;
+	}
+
+	public void setLargeur(float largeur) {
+		this.largeur = largeur;
+	}
+
+	public float getLongueur() {
+		return longueur;
+	}
+
+	public void setLongueur(float longueur) {
+		this.longueur = longueur;
+	}
+	
+	
+	
+}

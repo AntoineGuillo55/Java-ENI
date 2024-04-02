@@ -1,0 +1,15 @@
+package fr.eni.poodrills.modele;
+
+public class Rectangle extends Forme{
+
+	private float largeur;
+	private float longueur;
+	
+	public Rectangle(int largeur, int longueur) {
+		super();
+		this.largeur = largeur;
+		this.longueur = longueur;
+	}
+	
+	
+}
