@@ -1,0 +1,30 @@
+package tp_tri;
+
+import java.util.Arrays;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] tab = {5, 9, 4 ,7 ,3 ,1 ,6 ,5 ,41 ,56 ,12 ,37}; 
+		System.out.println("Tableau en entrée :");
+		System.out.println(Arrays.toString(tab));
+		System.out.println("Tableau en sortie :");
+		System.out.println(Arrays.toString(triCroissantTableau(tab)));
+	};
+
+	public static int[] triCroissantTableau(int[] tab) {
+		
+		int[] tableau = tab; 
+		for(int i1 = 0; i1 < tableau.length; i1++) {
+			for(int i2 = i1+1 ; i2< tableau.length; i2++) {
+				if(tableau[i1] > tableau[i2]) {
+					int tmp = tableau[i1];
+					tableau[i1] = tableau[i2];
+					tableau[i2] = tmp;
+				} 
+			}
+		}
+		return tableau;
+	}
+}

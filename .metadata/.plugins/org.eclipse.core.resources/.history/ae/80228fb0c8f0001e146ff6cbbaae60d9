@@ -1,0 +1,6 @@
+package bo;
+
+public class Document {
+	protected String titre;
+	
+}

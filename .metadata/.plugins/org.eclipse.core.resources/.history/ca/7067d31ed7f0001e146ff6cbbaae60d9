@@ -1,0 +1,19 @@
+package tp_factorielle;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		factorielle(5);
+	}
+
+	public static void factorielle(int nombre) {
+		int compteur = nombre;
+		int resultat = nombre;
+		do {
+			resultat = resultat*compteur-1;
+			compteur--;
+		} while(compteur == 0);
+		System.out.println();
+	}
+}
